@@ -53,7 +53,7 @@ Antes de usar una segmentación de clientes, también comprobaría si aparecen p
 | **DBSCAN** | Encuentra núcleos en regiones densas, los conecta y añade los puntos de borde alcanzables. | Detecta formas irregulares e identifica ruido sin fijar el número de clusters. | Es sensible a `eps`, `min_samples` y a la escala. Un mismo radio puede funcionar mal cuando los grupos tienen densidades distintas. | Identificación de zonas de alta concentración de accidentes y detección de observaciones aisladas. |
 | **Mezclas gaussianas (GMM)** | Modela los datos como una mezcla de distribuciones gaussianas. Habitualmente usa EM para alternar entre estimar las probabilidades de pertenencia y actualizar los parámetros de cada componente. | Permite grupos elípticos y solapados. Da una probabilidad de pertenencia a cada componente. | Hay que seleccionar el número de componentes. El ajuste depende de la inicialización y puede ser inestable con pocos datos o demasiados parámetros. | Segmentación de imágenes y perfiles de clientes cuando la pertenencia a un segmento es incierta. |
 
-![Componentes gaussianos elípticos con zonas de solapamiento](figuras/gmm.png)
+![Componentes gaussianos elípticos con zonas de solapamiento](gmm.png)
 
 Cuando dos componentes gaussianos se solapan, un punto puede tener probabilidades parecidas de pertenecer a ambos. Esto ayuda a expresar la incertidumbre de la asignación.
 
