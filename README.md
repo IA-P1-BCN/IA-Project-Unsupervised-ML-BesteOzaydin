@@ -8,7 +8,7 @@ En el aprendizaje supervisado, cada ejemplo de entrenamiento tiene una respuesta
 
 El *clustering* es una tarea de aprendizaje no supervisado que agrupa observaciones según un criterio de similitud. En el ejemplo de mi píldora, cada punto representa un cliente. El eje horizontal muestra cuántos pedidos hizo en los últimos 90 días y el vertical, cuánto gastó de media por pedido. Podemos usar estas variables para descubrir perfiles de compra y luego describirlos en unidades fáciles de interpretar, como pedidos y euros.
 
-![Clientes representados por número de pedidos y gasto medio](figuras/clientes.png)
+![Clientes representados por número de pedidos y gasto medio](clientes.png)
 
 La elección de variables afecta a los grupos. Si usamos distancias euclídeas y el gasto varía mucho más que el número de pedidos, el gasto puede dominar el cálculo. Estandarizar ambas variables ayuda a evitar que la escala de una sola determine el resultado.
 
@@ -26,7 +26,7 @@ En K-Means, el criterio es la cercanía a un centroide. En el método aglomerati
 
 | K-Means | Aglomerativo con Ward | DBSCAN |
 | --- | --- | --- |
-| ![K-Means divide las medias lunas](figuras/lunas-kmeans.png) | ![Ward también corta las medias lunas](figuras/lunas-ward.png) | ![DBSCAN recupera las dos medias lunas](figuras/lunas-dbscan.png) |
+| ![K-Means divide las medias lunas](lunas-kmeans.png) | ![Ward también corta las medias lunas](lunas-ward.png) | ![DBSCAN recupera las dos medias lunas](lunas-dbscan.png) |
 
 En este ejemplo de la píldora, los tres métodos reciben los mismos puntos. K-Means y Ward cortan las medias lunas, mientras que DBSCAN sigue las dos curvas.
 
